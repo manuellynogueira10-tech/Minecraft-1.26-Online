@@ -1,0 +1,8 @@
+
+:root{color-scheme:dark;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#101114;color:#f3f4f6}
+body{margin:0}main{max-width:980px;margin:auto;padding:36px 20px 80px}
+h1{font-size:clamp(28px,5vw,48px);margin:0 0 12px}.lead{color:#bfc4cc;line-height:1.6}
+section{margin-top:28px;padding:20px;border:1px solid #30343b;border-radius:16px;background:#17191e}
+.status,.log{padding:12px;border-radius:10px;background:#0e1013}.log{margin-top:10px;color:#b9e7c5;min-height:48px}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:10px;border-bottom:1px solid #30343b;text-align:left;vertical-align:top}
+canvas{display:block;width:100%;aspect-ratio:16/9;background:#000;border-radius:10px;border:1px solid #30343b}.small{color:#999;font-size:13px}

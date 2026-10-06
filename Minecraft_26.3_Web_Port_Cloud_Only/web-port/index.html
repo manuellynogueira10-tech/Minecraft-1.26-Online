@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Minecraft 26.3 — Web Port</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Minecraft 26.3 — Port Web</h1>
+    <p class="lead">
+      Este site é o runtime do port real. Ele não recria a tela do Minecraft em HTML.
+      A meta é fazer o código Java original renderizar diretamente no navegador.
+    </p>
+
+    <section>
+      <h2>Runtime</h2>
+      <div id="java-runtime-status" class="status">Carregando Java no navegador…</div>
+      <div id="log" class="log"></div>
+    </section>
+
+    <section>
+      <h2>Compatibilidade do projeto original</h2>
+      <div id="report">Carregando relatório da build na nuvem…</div>
+    </section>
+
+    <section>
+      <h2>Canvas do jogo</h2>
+      <canvas id="minecraft-canvas" width="1280" height="720"></canvas>
+      <p class="small">
+        O canvas fica vazio enquanto as chamadas LWJGL/OpenGL ainda não forem ligadas ao backend Web.
+      </p>
+    </section>
+  </main>
+
+  <script src="minecraft-bootstrap.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

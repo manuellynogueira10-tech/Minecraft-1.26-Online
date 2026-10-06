@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'org.teavm' version '0.16.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation teavm.libs.jsoApis
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+teavm {
+    all {
+        mainClass = 'online.minecraft.web.BrowserBootstrap'
+        debugInformation = false
+        obfuscated = true
+    }
+
+    js {
+        outputDir = file("$projectDir/site")
+        targetFileName = 'minecraft-bootstrap.js'
+        sourceMap = false
+        strict = true
+    }
+}
